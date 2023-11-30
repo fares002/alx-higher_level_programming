@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for i in range(0, 99):
-    print("{:d} = 0x{:x}".format(i, i))
+for letter in range(ord('a'), ord('z') + 1):
+    if letter != ord('q') and letter != ord('e'):
+        print('{:c}'.format(letter), end='')
