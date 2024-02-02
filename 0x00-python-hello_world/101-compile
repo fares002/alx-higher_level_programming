@@ -1,0 +1,10 @@
+# Script that compiles a Python script file
+import py_compile
+import os
+
+# Get the Python file name from the environment variable
+pyfile = os.environ['PYFILE']
+
+# Compile the Python file and generate the byte code file
+py_compile.compile(pyfile)
+
