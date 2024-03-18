@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """Displays all values in the states table of the database hbtn_0e_0_usa
 whose name matches that supplied as argument.
 """
