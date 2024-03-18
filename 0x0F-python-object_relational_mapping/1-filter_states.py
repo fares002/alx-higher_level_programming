@@ -13,11 +13,12 @@ if __name__ == "__main__":
     c = db.cursor()
 
     # Execute the query safely to avoid SQL injection
-    query = "SELECT * FROM `states` WHERE `name` LIKE 'N%' ORDER BY `id` ASC"
+    query = "SELECT * FROM `states` ORDER BY `id` ASC"
     c.execute(query)
 
     # Fetch and print all the results
     for state in c.fetchall():
+        if state[1][0] == 'N'
         print(state)
 
     # Close the cursor and the database connection
