@@ -7,4 +7,3 @@ const fileName = process.argv[3];
 
 const fileStream = fs.createWriteStream(fileName);
 request(url).pipe(fileStream);
-
